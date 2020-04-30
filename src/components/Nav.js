@@ -6,7 +6,8 @@ const styles = {
         width: '100%'
     },
     listItem: {
-        marginRight: 20
+        marginRight: 20,
+        fontSize: 14,
     },
 };
 class Nav extends React.Component {

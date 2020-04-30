@@ -10,21 +10,26 @@ class ListData extends React.Component {
     };
   }
   componentDidMount = async () => {
-    const response = await axios.get("https://reqres.in/api/users?page=2");
+    this.setState({ loading: true });
+    const response = await axios.get("https://reqres.in/api/users?per_page=15");
     try {
       if (response.data) {
-        this.setState({ userData: response.data.data });
-        return response;
+        const userData = response.data.data.sort((a, b) => {
+          if (a.first_name < b.first_name) return -1;
+          return 1;
+        });
+        this.setState({ userData });
+        return;
       }
+      this.setState({ error: 'Something went wrong!' });
     } catch (err) {
-      console.log("catcherror");
-
-      return err;
+      this.setState({ error: 'Something went wrong!' });
+    } finally {
+      this.setState({ loading: false });
     }
   };
 
   render() {
-    console.log("userData", this.state.userData[0]);
 
     return (
       <div>
