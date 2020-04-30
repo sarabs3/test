@@ -19,6 +19,22 @@
         opacity: 100%;
     }
 }
+.moveFromTop {
+    animation: moveFromTop 1.5s ease-out forwards;
+}
+@keyframes moveFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(-0px);
+    }
+}
 @media screen and (max-width: 425px) {
     .column__right {
         background: #FBF8F5;

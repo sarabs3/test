@@ -29,8 +29,8 @@ class Dashboard extends React.Component {
                     <Media queries={mediaQueries}>
                         {matches => (
                             <>
-                                {matches.small && <UserData />}
-                                {matches.medium && <Nav />}
+                                {matches.small && <UserData className="moveFromTop" />}
+                                {matches.medium && <Nav className="moveFromTop" />}
                             </>
                         )}
                     </Media>
@@ -66,7 +66,7 @@ class Dashboard extends React.Component {
                         <Media queries={mediaQueries}>
                             {matches => (
                                 <>
-                                    {matches.medium && <UserData />}
+                                    {matches.medium && <UserData className="moveFromTop" />}
                                 </>
                             )}
                         </Media>

@@ -44,10 +44,10 @@ class UserData extends React.Component{
     };
 
     render(){
-        const { classes } = this.props;
+        const { classes, className } = this.props;
         const { bellColor, menuColor } = this.state;
         return(
-            <div className={classes.listItem}>
+            <div className={`${classes.listItem} ${className}`}>
                 <div className={classes.item}><img src={user} /> </div>
                 <div className={classes.icons}>
                     <div

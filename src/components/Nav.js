@@ -11,9 +11,9 @@ const styles = {
 };
 class Nav extends React.Component {
     render () {
-        const { classes } = this.props;
+        const { classes, className } = this.props;
         return (
-            <div className="nav">
+            <div className={`nav ${className}`}>
                 <ul className={classes.list}>
                     <li className={classes.listItem}><a href="#">Browse</a></li>
                     <li className={classes.listItem}><a href="#">How it works</a></li>
