@@ -13,10 +13,10 @@
 }
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        /*opacity: 0;*/
     }
     to {
-        opacity: 100%;
+        /*opacity: 100%;*/
     }
 }
 .moveFromTop {
@@ -24,14 +24,14 @@
 }
 @keyframes moveFromTop {
     0% {
-        opacity: 0;
+        /*opacity: 0;*/
         transform: translateY(-500px);
     }
     70% {
-        opacity: 0;
+        /*opacity: 0;*/
     }
     100% {
-        opacity: 100%;
+        /*opacity: 100%;*/
         transform: translateY(-0px);
     }
 }
