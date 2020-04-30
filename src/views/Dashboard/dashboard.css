@@ -1,0 +1,26 @@
+.column__left {
+    background: #F2C4A3;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.column__right {
+    height: 100vh;
+    overflow-y: scroll;
+}
+.fadeInAnimation {
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .column__right {
+        background: #FBF8F5;
+    }
+}

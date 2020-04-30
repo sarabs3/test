@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+.flex50{
+  flex: 0.5;
+}
+@media screen and (max-width: 425px) {
+  .flex50{
+    flex: 1;
+  }
+}
+@font-face {
+  font-family: 'wigrum';
+  src: url('./assets/fonts/wigrum-black.woff');
+}
+@font-face {
+  font-family: 'wigrum-medium';
+  src: url('./assets/fonts/wigrum-medium.woff');
+}
+@font-face {
+  font-family: 'wigrum-regular';
+  src: url('./assets/fonts/wigrum.woff');
+}
+h2 {
+  font-family: 'wigrum-regular';
+  text-align: center;
+  font-size: 32px;
+}
+h4 {
+  font-family: 'wigrum';
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-width: 500;
+}
+.heading3{
+  font-family: 'wigrum-medium';
+  font-size: 22px;
+  color: black;
+  margin-bottom: 16px;
+}
+.sub-heading{
+  font-size: 14px;
+  margin-bottom: 20px;
+}

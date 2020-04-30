@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ListData from './views/ListData';
+import UserData from './views/UserData';
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
+import {Dashboard} from "./views/Dashboard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Dashboard>
+        <Container>
+        <Row>
+          <Col><UserData/></Col>
+          <Col></Col>
+        </Row>
+      </Container>
+    </Dashboard>
+    )
+  }
 }
 
 export default App;
