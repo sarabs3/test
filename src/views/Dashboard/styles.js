@@ -43,14 +43,14 @@ export const styles = {
     circle: {
         left: 'calc(50% - 130px)',
         animationDelay: '0.3s',
-        opacity: 0
+        // opacity: 0
     },
     formIcon: {
         zIndex: 1,
         left: 'calc(50% - 85px)',
         top: 55,
         animationDelay: '0.6s',
-        opacity: 0
+        // opacity: 0
     },
     button: {
         marginTop: 320,
