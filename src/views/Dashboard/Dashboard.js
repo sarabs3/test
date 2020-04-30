@@ -35,14 +35,14 @@ class Dashboard extends React.Component {
                         )}
                     </Media>
 
-                    <div className={classes.headingContainer}>
+                    <div className={`fadeInAnimation ${classes.headingContainer}`}>
                         <div className={classes.heading}>
                             <h2>Welcome! Thanks for joining us.</h2>
                         </div>
                         <div className={classes.iconContainer}>
                             <FormIcon className={`${classes.icons} ${classes.formIcon} fadeInAnimation`} />
                             <Circle className={`${classes.icons} ${ classes.circle} fadeInAnimation`} />
-                            <Pattern width="100%" className={`${classes.icons} fadeInAnimation`} />
+                            <Pattern width="100%" className={`${classes.icons} fadeInAnimation leafs`} />
                         </div>
                         <div className={classes.button}>
                             <Button
@@ -61,7 +61,7 @@ class Dashboard extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="column__right flex50">
+                <div className="column__right flex50 fadeInAnimation">
                     <div className={classes.profileContainer}>
                         <Media queries={mediaQueries}>
                             {matches => (
@@ -77,6 +77,6 @@ class Dashboard extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default withStyles(styles)(Dashboard);

@@ -35,6 +35,23 @@
         transform: translateY(-0px);
     }
 }
+.moveFromTop {
+    animation: moveFromTop 1.5s ease-out forwards;
+}
+.leafs {
+     animation: leafs 10s ease-out infinite;
+ }
+@keyframes leafs {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    50% {
+        transform: skew(5deg, 2deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
 @media screen and (max-width: 425px) {
     .column__right {
         background: #FBF8F5;
