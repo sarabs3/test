@@ -44,15 +44,13 @@ class Dashboard extends React.Component {
                             <Circle className={`${classes.icons} ${ classes.circle} fadeInAnimation`} />
                             <Pattern width="100%" className={`${classes.icons} fadeInAnimation leafs`} />
                         </div>
-                        <div className={classes.button}>
-                            <Button
-                                className={classes.button}
-                                customStyles={buttonStyles}
-                                onClick={() => window.open('https://www.google.com')}
-                            >
-                                Set up your account
-                            </Button>
-                        </div>
+                        <Button
+                            className={classes.button}
+                            customStyles={buttonStyles}
+                            onClick={() => window.open('https://www.google.com')}
+                        >
+                            Set up your account
+                        </Button>
                         <div className={classes.description}>
                             <h4>Description</h4>
                             <p className="body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.

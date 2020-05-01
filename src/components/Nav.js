@@ -8,6 +8,11 @@ const styles = {
     listItem: {
         marginRight: 20,
         fontSize: 14,
+        '&:hover': {
+            'a': {
+            color: '#CD845C',
+            },
+        },
     },
 };
 class Nav extends React.Component {

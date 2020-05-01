@@ -55,6 +55,10 @@ export const styles = {
     },
     button: {
         marginTop: 320,
+        transition: '0.3s',
+        '&:hover': {
+            background: 'white'
+        },
     },
     [mobileMediaQuery]: {
         dashboard: {
