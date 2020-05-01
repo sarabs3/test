@@ -8,10 +8,11 @@ const styles = {
     listItem: {
         marginRight: 20,
         fontSize: 14,
+    },
+    link: {
+        transition: '0.3s',
         '&:hover': {
-            'a': {
             color: '#CD845C',
-            },
         },
     },
 };
@@ -21,10 +22,10 @@ class Nav extends React.Component {
         return (
             <div className={`nav ${className}`}>
                 <ul className={classes.list}>
-                    <li className={classes.listItem}><a href="#">Browse</a></li>
-                    <li className={classes.listItem}><a href="#">How it works</a></li>
-                    <li className={classes.listItem}><a href="#">Help</a></li>
-                    <li className={classes.listItem}><a href="#">About</a></li>
+                    <li className={classes.listItem}><a className={classes.link} href="#">Browse</a></li>
+                    <li className={classes.listItem}><a className={classes.link} href="#">How it works</a></li>
+                    <li className={classes.listItem}><a className={classes.link} href="#">Help</a></li>
+                    <li className={classes.listItem}><a className={classes.link} href="#">About</a></li>
                 </ul>
             </div>
         );
