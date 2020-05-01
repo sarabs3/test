@@ -15,8 +15,8 @@ class ListData extends React.Component {
     try {
       if (response.data) {
         const userData = response.data.data.sort((a, b) => {
-          if (a.first_name < b.first_name) return -1;
-          return 1;
+          if (a.first_name < b.first_name) return 1;
+          return -1;
         });
         this.setState({ userData });
         return;
